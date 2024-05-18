@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/flaticon/flaticon.css">
 
     <!-- Slider -->
+
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
@@ -39,17 +40,144 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header>
+<body id="drak">
+    <!-- Header -->
+    <header class="fixed-top">
         <div class="container">
-            Header
+            <nav class="navbar navbar-expand-lg stroke">
+                <a class="navbar-brand" href="#">Pooch Care</a>
+                <button class="navbar-toggler btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" onclick="changeIcon()">
+                    <span id="icon-bars" class="navbar-toggler fa-solid fa-bars"></span>
+                    <span id="icon-xmark" class="navbar-toggler fa-solid fa-xmark d-none"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                                <li><a class="dropdown-item" href="#">Landing page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header__icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <button class="btn mb-1" id="switchButton" title="Click to switch theme">
+                    <i class="las la-moon"></i>
+                    <i class="las la-sun"></i>
+                </button>
+            </nav>
         </div>
     </header>
-
-    <section class="main-section main-carousel">
-        Main Carousel
+    <div class="header-fixed-space-height">
+    </div>
+    <!-- Carousel -->
+    <section id="carouselPoochCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></li>
+            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="3" aria-label="Slide 4"></li>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="banner__top1 banner__view"></div>
+                <div class="banner__infor">
+                    <div class="container">
+                        <div class="carousel-caption d-md-block banner-infor-bg" style="text-align: left;">
+                            <h5>Quality Things for Loving Pets</h5>
+                            <p style="color: #e9e9de;">Keeps your Pet Smiling</p>
+                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
+                                Read More
+                            </a>
+                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="banner__top2 banner__view"></div>
+                <div class="banner__infor">
+                    <div class="container mt-auto">
+                        <div class="carousel-caption d-md-block text-left banner-infor-bg ml-lg-auto"
+                            style="text-align: left; margin-left: 300px;">
+                            <h5>Delivering happiness for Pets</h5>
+                            <p style="color: #e9e9de;">For the love of pets</p>
+                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
+                                Read More
+                            </a>
+                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="banner__top3 banner__view"></div>
+                <div class="banner__infor">
+                    <div class="container">
+                        <div class="carousel-caption d-md-block text-left banner-infor-bg" style="text-align: left;">
+                            <h5>Quality Things for Loving Pets</h5>
+                            <p style="color: #e9e9de;">Keeps your Pet Smiling</p>
+                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
+                                Read More
+                            </a>
+                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="banner__top4 banner__view"></div>
+                <div class="banner__infor">
+                    <div class="container">
+                        <div class="carousel-caption d-md-block text-left banner-infor-bg ml-lg-auto"
+                            style="text-align: left; margin-left: 300px;">
+                            <h5>Delivering happiness for Pets</h5>
+                            <p style="color: #e9e9de;">We help your Projects</p>
+                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
+                                Read More
+                            </a>
+                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
     <section class="main-section about-us">
         <div class="container">
             About us
@@ -190,10 +318,95 @@
             </div>
         </div>
     </section>
+    <!-- Pricing -->
+    <section class="pricing main-section">
+        <div class="pricing__content pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
+            <div class="container">
+                <div class="title text-center mx-auto">
+                    <h6 class="text-danger">Our Plans</h6>
+                    <h3 class="mb-5">Affordable Packages</h3>
+                </div>
+                <div class="pricing__row row justify-content-center no-gutters">
+                    <div class="pricing__left col-lg-4">
+                        <div class="pricing__item">
+                            <div class="pricing__top">
+                                <h6 class="one-light">
+                                    Free Package</h6>
+                                <h4><label>$ </label>0<span>/month</span>
+                                </h4>
+                            </div>
+                            <div class="pricing__bottom">
+                                <div class="pricing__list">
+                                    <ul class="links">
+                                        <li>5 Dog Walk</li>
+                                        <li>3 Vet Visit</li>
+                                        <li>3 Pet Spa</li>
+                                        <li>Free Supports</li>
+                                        <li>Customer Support</li>
+                                    </ul>
+                                </div>
+                                <div class="buy-button">
+                                    <a class="popup btn btn-style btn-primary" href="#url">
+                                        Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__left col-lg-4 active">
+                        <div class="pricing__item pt-0">
+                            <div class="pricing__top">
+                                <h5>Save 10% </h5>
+                                <h6>Standard Package</h6>
 
-    <section class="main-section pricing">
-        <div class="container">
-            Pricing
+                                <h4>
+                                    <label>$</label>39<span>/month</span>
+                                </h4>
+                            </div>
+                            <div class="pricing__bottom">
+                                <div class="pricing__list">
+                                    <ul class="links">
+
+                                        <li>5 Dog Walk</li>
+                                        <li>3 Vet Visit</li>
+                                        <li>3 Pet Spa</li>
+                                        <li>Free Supports</li>
+                                        <li>Customer Support</li>
+                                    </ul>
+                                </div>
+                                <div class="buy-button">
+                                    <a class="popup btn btn-style btn-primary" href="#url">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__left col-lg-4">
+                        <div class="pricing__item">
+                            <div class="pricing__top">
+                                <h6 class="one-light">Pro Package </h6>
+
+                                <h4>
+                                    <label>$</label>89<span>/month</span>
+                                </h4>
+                            </div>
+                            <div class="pricing__bottom">
+                                <div class="pricing__list">
+                                    <ul class="links">
+
+                                        <li>5 Dog Walk</li>
+                                        <li>3 Vet Visit</li>
+                                        <li>3 Pet Spa</li>
+                                        <li>Free Supports</li>
+                                        <li>Customer Support</li>
+                                    </ul>
+                                </div>
+                                <div class="buy-button">
+                                    <a class="popup btn btn-style btn-primary" href="#url">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -202,7 +415,7 @@
             <div class="section-content-wrap">
                 <div class="title-group text-center mx-auto">
                     <div class="subtitle">Better pet nutrition.</div>
-                    <div class="title text-dark">The finest fresh food and all your pet needs.</div>
+                    <div class="title">The finest fresh food and all your pet needs.</div>
                     <div class="desc mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
                         sit
                         amet
@@ -236,7 +449,7 @@
             <div class="section-content-wrap">
                 <div class="title-group text-center mx-auto">
                     <div class="subtitle">Testimonials</div>
-                    <div class="title text-dark">Happy Clients & Feedbacks</div>
+                    <div class="title">Happy Clients & Feedbacks</div>
                 </div>
                 <div id="testimonial-slider" class="owl-carousel owl-theme mt-4">
                     <div class="item">
@@ -390,9 +603,11 @@
         src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/js/jquery.magnific-popup.min.js"></script>
 
     <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
 
     <!-- Slider -->
     <script src="./js/owl.carousel.min.js"></script>
