@@ -21,3 +21,15 @@ $('.main-slider').owlCarousel({
 })
 
 new WOW().init();
+
+document.getElementById("switchButton").onclick=function(){
+ document.querySelector("body").classList.toggle("dark");
+};
+let navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
+function changeIcon() {
+  let iconBars = document.getElementById('icon-bars');
+  let iconXmark = document.getElementById('icon-xmark');
+
+  iconBars.classList.toggle('d-none');
+  iconXmark.classList.toggle('d-none');
+}
