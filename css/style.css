@@ -23,7 +23,7 @@ li {
 }
 
 
-/* Mau theme Light */
+/* MÀU THEME LIGHT */
 :root {
   --primary-color: #189A46;
   --secondary-color: #f53626;
@@ -41,7 +41,7 @@ li {
   --widget-bg: #3f3a64;
 }
 
-/* màu theme dark */
+/* MÀU THEME DARK */
 .dark {
   --primary-color: #189A46;
   --secondary-color: #f53626;
@@ -89,12 +89,7 @@ body.dark #switchButton .la-sun {
 }
 
 /* CÁC THẺ HTML */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   color: var(--heading-color);
   font-weight: 600;
 }
@@ -330,7 +325,7 @@ header .navbar a.dropdown-item:hover {
   }
 }
 
-/* Carousel */
+/* CAROUSEL */
 #carouselPoochCaptions{
   position: relative;
 }

@@ -21,10 +21,11 @@ $('.main-slider').owlCarousel({
 })
 
 new WOW().init();
-
+// Chỉnh màu nền sáng tối
 document.getElementById("switchButton").onclick=function(){
  document.querySelector("body").classList.toggle("dark");
 };
+//Chỉnh navbar toggler dấu x
 let navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
 function changeIcon() {
   let iconBars = document.getElementById('icon-bars');
