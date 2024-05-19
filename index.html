@@ -16,10 +16,6 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
     <!-- LINE AWESOME -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -28,568 +24,277 @@
     <link rel="stylesheet" href="./css/flaticon/flaticon.css">
 
     <!-- Slider -->
-
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
     <!-- Main Style -->
-    <link rel="stylesheet" href="./css/mfp.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="drak">
-    <!-- Header -->
-    <header class="fixed-top">
+<body>
+    <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg stroke">
-                <a class="navbar-brand" href="#">Pooch Care</a>
-                <button class="navbar-toggler btn btn-outline-success" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" onclick="changeIcon()">
-                    <span id="icon-bars" class="navbar-toggler fa-solid fa-bars"></span>
-                    <span id="icon-xmark" class="navbar-toggler fa-solid fa-xmark d-none"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                                <li><a class="dropdown-item" href="#">Landing page</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link header__icon">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <button class="btn mb-1" id="switchButton" title="Click to switch theme">
-                    <i class="las la-moon"></i>
-                    <i class="las la-sun"></i>
-                </button>
-            </nav>
+            Header
         </div>
     </header>
-    <div class="header-fixed-space-height">
-    </div>
-    <!-- Carousel -->
-    <section id="carouselPoochCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></li>
-            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="1" aria-label="Slide 2"></li>
-            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="2" aria-label="Slide 3"></li>
-            <li data-bs-target="#carouselPoochCaptions" data-bs-slide-to="3" aria-label="Slide 4"></li>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="banner__top1 banner__view"></div>
-                <div class="banner__infor">
-                    <div class="container">
-                        <div class="carousel-caption d-md-block banner-infor-bg" style="text-align: left;">
-                            <h5>Quality Things for Loving Pets</h5>
-                            <p style="color: #e9e9de;">Keeps your Pet Smiling</p>
-                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
-                                Read More
-                            </a>
-                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
-                                Contact Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="banner__top2 banner__view"></div>
-                <div class="banner__infor">
-                    <div class="container mt-auto">
-                        <div class="carousel-caption d-md-block text-left banner-infor-bg ml-lg-auto"
-                            style="text-align: left; margin-left: 280px;">
-                            <h5>Delivering happiness for Pets</h5>
-                            <p style="color: #e9e9de;">For the love of pets</p>
-                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
-                                Read More
-                            </a>
-                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
-                                Contact Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="banner__top3 banner__view"></div>
-                <div class="banner__infor">
-                    <div class="container">
-                        <div class="carousel-caption d-md-block text-left banner-infor-bg" style="text-align: left;">
-                            <h5>Quality Things for Loving Pets</h5>
-                            <p style="color: #e9e9de;">Keeps your Pet Smiling</p>
-                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
-                                Read More
-                            </a>
-                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
-                                Contact Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="banner__top4 banner__view"></div>
-                <div class="banner__infor">
-                    <div class="container">
-                        <div class="carousel-caption d-md-block text-left banner-infor-bg ml-lg-auto"
-                            style="text-align: left; margin-left: 300px;">
-                            <h5>Delivering happiness for Pets</h5>
-                            <p style="color: #e9e9de;">We help your Projects</p>
-                            <a class="btn button__style btn-white mt-sm-5 mt-4 mr-2 fs-5" href="#">
-                                Read More
-                            </a>
-                            <a class="btn button__style border-btn mt-sm-5 mt-4 fs-5" href="#">
-                                Contact Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <section class="main-section main-carousel">
+        Main Carousel
     </section>
-    <section class="main-section about-us">
+
+
+    <section class="about">
         <div class="container">
-            About us
-        </div>
-    </section>
-
-    <section class="main-section features py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="item col-lg-4 col-sm-6">
-                    <div class="item__content rounded-3">
-                        <div class="icon">
-                            <i class="fa fa-snowflake"></i>
-                        </div>
-                        <div class="title mt-3">
-                            <a href="#">Dog Walking</a>
-                        </div>
-                        <div class="desc mt-2">
-                            Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
-                            sit amet Ut blandit eu leo.
-                        </div>
-                        <a href="#" class="readmore mt-3">Read More</a>
-                    </div>
-                </div>
-
-                <div class="item col-lg-4 col-sm-6 mt-4 mt-sm-0">
-                    <div class="item__content rounded-3">
-                        <div class="icon">
-                            <i class="fa fa-cutlery"></i>
-                        </div>
-                        <div class="title mt-3">
-                            <a href="#">Healthy Meals</a>
-                        </div>
-                        <div class="desc mt-2">
-                            Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
-                            sit amet Ut blandit eu leo.
-                        </div>
-                        <a href="#" class="readmore mt-3">Read More</a>
-                    </div>
-                </div>
-
-                <div class="item col-lg-4 col-sm-6 mt-4 mt-lg-0">
-                    <div class="item__content rounded-3">
-                        <div class="icon">
-                            <i class="fa fa-sign-language"></i>
-                        </div>
-                        <div class="title mt-3">
-                            <a href="#">Pet Sitting</a>
-                        </div>
-                        <div class="desc mt-2">
-                            Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
-                            sit amet Ut blandit eu leo.
-                        </div>
-                        <a href="#" class="readmore mt-3">Read More</a>
-                    </div>
-                </div>
-
-                <div class="item col-lg-4 col-sm-6 mt-4">
-                    <div class="item__content rounded-3">
-                        <div class="icon">
-                            <i class="fa fa-sitemap"></i>
-                        </div>
-                        <div class="title mt-3">
-                            <a href="#">Dog Activities</a>
-                        </div>
-                        <div class="desc mt-2">
-                            Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
-                            sit amet Ut blandit eu leo.
-                        </div>
-                        <a href="#" class="readmore mt-3">Read More</a>
-                    </div>
-                </div>
-
-                <div class="item col-lg-4 col-sm-6 mt-4">
-                    <div class="item__content rounded-3">
-                        <div class="icon">
-                            <i class="fa fa-shower"></i>
-                        </div>
-                        <div class="title mt-3">
-                            <a href="#">Pet Daycare</a>
-                        </div>
-                        <div class="desc mt-2">
-                            Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
-                            sit amet Ut blandit eu leo.
-                        </div>
-                        <a href="#" class="readmore mt-3">Read More</a>
-                    </div>
-                </div>
-
-                <div class="item col-lg-4 col-sm-6 mt-4">
-                    <div class="item__content rounded-3">
-                        <div class="icon">
-                            <i class="fa fa-user-md"></i>
-                        </div>
-                        <div class="title mt-3">
-                            <a href="#">Pet Grooming</a>
-                        </div>
-                        <div class="desc mt-2">
-                            Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
-                            sit amet Ut blandit eu leo.
-                        </div>
-                        <a href="#" class="readmore mt-3">Read More</a>
-                    </div>
-                </div>
-
+          <div class="bottom-ab-grids">
+            <div class="bottom-ab-left">
+              <h6 class="about-content">
+                About Us</h6>
+              <h3 class="title">
+                We love your pets like they are our own </h3>
+              <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
+                tenetur consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus nunc, ut rhoncus
+                turpis sodales quis. </p>
+              <a href="#url" class="read">
+                Read More</a>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="main-section services">
+    <section class="main-section features">
         <div class="container">
-            Services
+            Features
         </div>
     </section>
 
-    <section class="main-section number py-5">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-6 col-lg-3 text-center">
-                    <div class="counter">730</div>
-                    <div class="title mt-2">Happy Clients</div>
-                </div>
 
-                <div class="col-6 col-lg-3 text-center">
-                    <div class="counter">80</div>
-                    <div class="title mt-2">Professionals</div>
-                </div>
-
-                <div class="col-6 col-lg-3 mt-4 mt-lg-0 text-center">
-                    <div class="counter">812</div>
-                    <div class="title mt-2">Adopted Pets</div>
-                </div>
-
-                <div class="col-6 col-lg-3 mt-4 mt-lg-0 text-center">
-                    <div class="counter">90</div>
-                    <div class="title mt-2">Awards</div>
-                </div>
+  <!-- Services -->
+  <section class="w3l-services1">
+      <div id="content-with-photo4-block" class="py-5">
+        <div class="container py-md-5 py-3 HPCWP">
+          <div class="cwp4-two row">
+            <div class="cwp4-image col-lg-6 pl-lg-5 mb-lg-0 mb-5">
+    
+              <img src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/ab.jpg" class="img-fluid" alt="">
+    
             </div>
-        </div>
-    </section>
-    <!-- Pricing -->
-    <section class="pricing main-section">
-        <div class="pricing__content pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
-            <div class="container">
-                <div class="title text-center mx-auto">
-                    <h6 class="text-danger">Our Plans</h6>
-                    <h3 class="mb-5" style="font-size: 40px;
-                    font-weight: 600;
-                    line-height: 48px;
-                    text-transform: capitalize;
-                    color: var(--heading-color);">Affordable Packages</h3>
-                </div>
-                <div class="pricing__row row justify-content-center no-gutters">
-                    <div class="pricing__left col-lg-4">
-                        <div class="pricing__item">
-                            <div class="pricing__top">
-                                <h6 class="one-light">
-                                    Free Package</h6>
-                                <h4><label>$ </label>0<span>/month</span>
-                                </h4>
-                            </div>
-                            <div class="pricing__bottom">
-                                <div class="pricing__list">
-                                    <ul class="links">
-                                        <li>5 Dog Walk</li>
-                                        <li>3 Vet Visit</li>
-                                        <li>3 Pet Spa</li>
-                                        <li>Free Supports</li>
-                                        <li>Customer Support</li>
-                                    </ul>
-                                </div>
-                                <div class="buy-button">
-                                    <a class="popup btn btn-style btn-primary" href="#url">
-                                        Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing__left col-lg-4 active">
-                        <div class="pricing__item pt-0">
-                            <div class="pricing__top">
-                                <h5>Save 10% </h5>
-                                <h6>Standard Package</h6>
-
-                                <h4>
-                                    <label>$</label>39<span>/month</span>
-                                </h4>
-                            </div>
-                            <div class="pricing__bottom">
-                                <div class="pricing__list">
-                                    <ul class="links">
-
-                                        <li>5 Dog Walk</li>
-                                        <li>3 Vet Visit</li>
-                                        <li>3 Pet Spa</li>
-                                        <li>Free Supports</li>
-                                        <li>Customer Support</li>
-                                    </ul>
-                                </div>
-                                <div class="buy-button">
-                                    <a class="popup btn btn-style btn-primary" href="#url">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing__left col-lg-4">
-                        <div class="pricing__item">
-                            <div class="pricing__top">
-                                <h6 class="one-light">Pro Package </h6>
-
-                                <h4>
-                                    <label>$</label>89<span>/month</span>
-                                </h4>
-                            </div>
-                            <div class="pricing__bottom">
-                                <div class="pricing__list">
-                                    <ul class="links">
-
-                                        <li>5 Dog Walk</li>
-                                        <li>3 Vet Visit</li>
-                                        <li>3 Pet Spa</li>
-                                        <li>Free Supports</li>
-                                        <li>Customer Support</li>
-                                    </ul>
-                                </div>
-                                <div class="buy-button">
-                                    <a class="popup btn btn-style btn-primary" href="#url">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    
+            <div class="cwp4-text col-lg-6">
+              <h6 class="sub-title">
+                Why Choose Us          </h6>
+              <h3 class="hny-title">
+                What We Offer for You          </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit.          </p>
+    
+              <ul class="cont-4">
+                <li><span class="fa fa-check"></span>Certified Groomer            </li>
+                <li><span class="fa fa-check"></span>10 Years of Experience            </li>
+                <li><span class="fa fa-check"></span>Pet Lover            </li>
+                <li><span class="fa fa-check"></span>Customer Supports            </li>
+                <li><span class="fa fa-check"></span>Veterinary Help            </li>
+    
+              </ul>
             </div>
+    
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="main-section video py-5">
+
+    <section class="main-section number">
         <div class="container">
-            <div class="section-content-wrap">
-                <div class="title-group text-center mx-auto">
-                    <div class="subtitle">Better pet nutrition.</div>
-                    <div class="title">The finest fresh food and all your pet needs.</div>
-                    <div class="desc mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
-                        sit
-                        amet
-                        elit consec tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure
-                        voluptatibus explicabo officia.</div>
-                </div>
-                <div class="content-wrap mt-4">
-                    <div class="position-relative">
-                        <div class="thumbnail">
-                            <img src="./img/banner2.jpg" class="img-fluid video-popup-image rounded-3" alt="Play video">
-                        </div>
-                        <a href="#popup-video-content" class="popup-video text-center position-absolute">
-                            <div class="play-icon position-absolute">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </a>
-
-                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                        <div id="popup-video-content" class="mfp-hide">
-                            <iframe src="https://player.vimeo.com/video/101587706" frameborder="0"
-                                allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            Number
         </div>
     </section>
 
-    <section class="main-section testimonials py-5">
+    <section class="main-section pricing">
         <div class="container">
-            <div class="section-content-wrap">
-                <div class="title-group text-center mx-auto">
-                    <div class="subtitle">Testimonials</div>
-                    <div class="title">Happy Clients & Feedbacks</div>
-                </div>
-                <div id="testimonial-slider" class="owl-carousel owl-theme mt-4">
-                    <div class="item">
-                        <div class="item__wrap rounded-3">
-                            <div class="item__content">
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                    Dolores molestias adipisci dolor sit amet!.
-                                </div>
-                                <div class="author d-flex align-items-center">
-                                    <div class="avatar">
-                                        <img src="./img/f1.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="info ms-4">
-                                        <div class="name">John wilson</div>
-                                        <div class="place">Example City</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__wrap rounded-3">
-                            <div class="item__content">
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                    Dolores molestias adipisci dolor sit amet!.
-                                </div>
-                                <div class="author d-flex align-items-center">
-                                    <div class="avatar">
-                                        <img src="./img/f2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="info ms-4">
-                                        <div class="name">Julia sakura</div>
-                                        <div class="place">Example City</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__wrap rounded-3">
-                            <div class="item__content">
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                    Dolores molestias adipisci dolor sit amet!.
-                                </div>
-                                <div class="author d-flex align-items-center">
-                                    <div class="avatar">
-                                        <img src="./img/f3.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="info ms-4">
-                                        <div class="name">Roy Linderson</div>
-                                        <div class="place">Example City</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__wrap rounded-3">
-                            <div class="item__content">
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                    Dolores molestias adipisci dolor sit amet!.
-                                </div>
-                                <div class="author d-flex align-items-center">
-                                    <div class="avatar">
-                                        <img src="./img/f4.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="info ms-4">
-                                        <div class="name">Mike Thyson</div>
-                                        <div class="place">Example City</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__wrap rounded-3">
-                            <div class="item__content">
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                    Dolores molestias adipisci dolor sit amet!.
-                                </div>
-                                <div class="author d-flex align-items-center">
-                                    <div class="avatar">
-                                        <img src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/f2.jpg"
-                                            alt="" class="img-fluid">
-                                    </div>
-                                    <div class="info ms-4">
-                                        <div class="name">Laura gill</div>
-                                        <div class="place">Example City</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__wrap rounded-3">
-                            <div class="item__content">
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                    Dolores molestias adipisci dolor sit amet!.
-                                </div>
-                                <div class="author d-flex align-items-center">
-                                    <div class="avatar">
-                                        <img src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/f3.jpg"
-                                            alt="" class="img-fluid">
-                                    </div>
-                                    <div class="info ms-4">
-                                        <div class="name">Smith Johnson</div>
-                                        <div class="place">Example City</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            Pricing
         </div>
     </section>
 
-    <section class="main-section subscription">
+    <section class="main-section video">
         <div class="container">
-            Subscription
+            Video
         </div>
     </section>
 
-    <footer>
+    <section class="main-section testimonials">
+        <div class="container">
+            Testimonials
+        </div>
+    </section>
+
+    <!--subcription-->
+    <section class="w3l-bottom py-5">
+        <div class="container py-md-4 py-3 text-center HPSubscribe">
+          <div class="row my-lg-4 mt-4">
+            <div class="col-lg-9 col-md-10 mx-auto">
+              <div class="subscribe mx-auto">
+                <div class="header-section text-center mx-auto">
+                  <h3 class="hny-title">Stay Updated! </h3>
+                  <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus
+                    turpis sodales quis. Integer sit amet mattis quam.</p>
+                </div>
+                <form action="" method="post" class="subscribe-wthree pt-2 mt-5">
+                  <div class="d-md-flex flex-wrap subscribe-wthree-field">
+    
+                    <input class="form-control" type="email" placeholder="Enter your email..." name="Email" required="">
+                  
+                    <button class="btn btn-style btn-primary" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- footer -->
+    <section class="w3l-footer">
+      <footer class="footer-28">
+    
+                <div class="footer-bg-layer">
+          <div class="container py-lg-3 PoochCareFooter">
+            <div class="row footer-top-28">
+    
+              <div class="col-lg-6 col-md-5 footer-list-28 mt-5">
+                <h6 class="footer-title-28">
+                  Contact information</h6>
+                <ul>
+    
+                                              <li>
+                    <p>
+                      <strong>Address</strong>
+                      : #135 block, Barnard St. Brooklyn, London 10036, UK</p>
+                  </li>
+                  
+    
+    
+                                              <li>
+                    <p>
+                      <strong>Phone</strong>
+                      : <a href="tel:+(12)234-11-24">
+                        +(12)234-11-24</a></p>
+                  </li>
+                  
+                                              <li>
+                    <p>
+                      <strong>Email</strong>
+                      : <a href="mailto:example@mail.com">
+                        example@mail.com</a></p>
+                  </li>
+                              </ul>
+    
+                                        <div class="main-social-footer-28 mt-3 FooterSocial">
+                  <ul class="social-icons">
+    
+                                                    <li class="facebook">
+                      <a href="https://www.facebook.com/w3layouts/" title="Facebook">
+                        <span class="fab fa-facebook-f" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    
+                                                    <li class="twitter">
+                      <a href="https://twitter.com/W3layouts" title="Twitter">
+                        <span class="fab fa-twitter" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    
+                                                    <li class="dribbble">
+                      <a href="https://dribbble.com/w3layouts" title="Dribbble">
+                        <span class="fab fa-dribbble" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    
+                                                    <li class="google">
+                      <a href="https://myaccount.google.com/intro/profile" title="Google">
+                        <span class="fab fa-google" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="row">
+                  <div class="col-sm-4 col-6 footer-list-28 mt-5">
+    
+                  <div id="archives-4" class="widget_archive"><h6 class="footer-title-28">Archives</h6>
+          <ul>
+              <li><a href="https://wp.w3layouts.com/poochcare/2020/12/">December 2020</a></li>
+          </ul>
+    
+          </div>                
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list-28 mt-5">
+                  <div id="categories-4" class="widget_categories"><h6 class="footer-title-28">Categories</h6>
+          <ul>
+              <li class="cat-item cat-item-5"><a href="https://wp.w3layouts.com/poochcare/category/animals/">Animals</a>
+    </li>
+      <li class="cat-item cat-item-3"><a href="https://wp.w3layouts.com/poochcare/category/pets/">Pets</a>
+    </li>
+      <li class="cat-item cat-item-4"><a href="https://wp.w3layouts.com/poochcare/category/pets-care/">Pets care</a>
+    </li>
+      <li class="cat-item cat-item-1"><a href="https://wp.w3layouts.com/poochcare/category/uncategorized/">Uncategorized</a>
+    </li>
+          </ul>
+    
+          </div>              </div>
+                  <div class="col-sm-4 footer-list-28 mt-5">
+                  <div id="meta-4" class="widget_meta"><h6 class="footer-title-28">Meta</h6>
+        <ul>
+                <li><a href="https://wp.w3layouts.com/poochcare/wp-login.php">Log in</a></li>
+          <li><a href="https://wp.w3layouts.com/poochcare/feed/">Entries feed</a></li>
+          <li><a href="https://wp.w3layouts.com/poochcare/comments/feed/">Comments feed</a></li>
+    
+          <li><a href="https://wordpress.org/">WordPress.org</a></li>
+        </ul>
+    
+        </div>              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+          <!-- copyright -->
+                      <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
+            <div class="container CopyRights">
+              <p class="copy-footer-28 text-center"> © 2024            All Rights Reserved by            <a href="https://w3layouts.com/">
+                  W3Layouts.</a>
+                </p>
+            </div>
+          </div>
+                <!-- //copyright -->
+    
+    
+        </div>
+      </footer>
+    
+    
+      <!-- move top icon -->
+      <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+        <span class="fa fa-angle-up"></span>
+      </button>
+      <!-- move top icon -->
+    
+    </section>
+
+    <!-- <footer>
         <div class="container">
             footer
         </div>
@@ -597,21 +302,13 @@
         <a href="#" class="backToTop cd-top text-replace js-cd-top">
             <i class="fa fa-arrow-up"></i>
         </a>
-    </footer>
+    </footer> -->
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Popup -->
-    <script
-        src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/js/jquery.magnific-popup.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <!-- Slider -->
     <script src="./js/owl.carousel.min.js"></script>
