@@ -730,7 +730,7 @@ header .navbar a.dropdown-item:hover {
     line-height: 55px;
   }
   #carouselPoochCaptions .carousel-caption {
-    transform: translate(5%, -15%);
+    transform: translate(0%, -40%);
   }
 }
 
@@ -748,18 +748,14 @@ header .navbar a.dropdown-item:hover {
   .carousel .banner__view {
     height: 95vh;
   }
-}
-
-@media (max-width: 600px) {
-  .carousel.slide .banner__view {
-    min-height: 500px;
-  }
-  .carousel .banner__view {
-    height: 80vh;
+  #carouselPoochCaptions .carousel-caption {
+    margin-left: 100px !important;
   }
 }
-
 @media (max-width: 480px) {
+  #carouselPoochCaptions .carousel-caption {
+    margin-left: 10 !important;
+  }
   .carousel.slide .banner-infor-bg h5 {
     font-size: 32px;
     line-height: 42px;
@@ -768,12 +764,7 @@ header .navbar a.dropdown-item:hover {
   .carousel.slide .banner__view {
     min-height: 480px;
   }
-}
 
-@media (max-width: 440px) {
-  .carousel.slide .banner__view {
-    min-height: 440px;
-  }
 }
 /* Pricing */
 .pricing {
