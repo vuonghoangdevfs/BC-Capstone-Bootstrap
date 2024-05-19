@@ -449,7 +449,9 @@ header .navbar a.dropdown-item:hover {
     font-size: 50px;
     line-height: 55px;
   }
-  
+  #carouselPoochCaptions .carousel-caption {
+    transform: translate(0%, -40%);
+  }
 }
 
 @media (max-width: 768px) {
