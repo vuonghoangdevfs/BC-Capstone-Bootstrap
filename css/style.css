@@ -477,6 +477,9 @@ header
   background-color: var(--primary-color);
   color: #fff;
 }
+.navbar #switchButton{
+  border: 1px solid transparent;
+}
 .navbar #switchButton .la-sun {
   opacity: 0.5;
   font-size: 25px;
@@ -987,5 +990,11 @@ header .navbar a.dropdown-item:hover {
     width: 85%;
     gap: 25px;
     margin: 30px auto;
+  }
+  .pricing .title h6{
+    font-size: 20px;
+  }
+  .pricing .title h3{
+    font-size: 30px !important;
   }
 }
